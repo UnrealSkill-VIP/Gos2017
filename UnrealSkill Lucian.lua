@@ -4,13 +4,13 @@ function AutoUpdate(data)
     if tonumber(data) > tonumber(ver) then
         PrintChat("New version found! " .. data)
         PrintChat("Downloading update, please wait...")
-        DownloadFileAsync("https://raw.githubusercontent.com/Cloudhax23/GoS/master/Common/Gangplank.lua", SCRIPT_PATH .. "Gangplank.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
+        DownloadFileAsync("https://raw.githubusercontent.com/UnrealSkill-VIP/Gos2017/master/UnrealSkill%20Lucian.lua", SCRIPT_PATH .. "UnrealSkill Lucian.lua", function() PrintChat("Update Complete, please 2x F6!") return end)
     else
         PrintChat("No updates found!")
     end
 end
-
-GetWebResultAsync("https://raw.githubusercontent.com/Cloudhax23/GoS/master/Common/Gangplank.version", AutoUpdate)
+--Pega Versão Antes
+GetWebResultAsync("https://raw.githubusercontent.com/UnrealSkill-VIP/Gos2017/master/Lucian.version", AutoUpdate)
 
 
 --Campeão
